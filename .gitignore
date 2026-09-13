@@ -1,0 +1,9 @@
+bin/
+obj/
+.vs/
+*.user
+artifacts/
+.superpowers/
+Library/
+Logs/
+docs/implementation-plan.md

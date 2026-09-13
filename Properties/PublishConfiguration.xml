@@ -1,0 +1,6 @@
+<PublishConfiguration>
+  <DisplayName>Reach Stacker Fix</DisplayName>
+  <ShortDescription>Prevents reach stackers from using inter-terminal freight routes.</ShortDescription>
+  <Version>0.1.0</Version>
+  <GameVersion>1.6.*</GameVersion>
+</PublishConfiguration>
