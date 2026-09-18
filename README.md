@@ -6,7 +6,9 @@ Version **0.1.0** has passed its first in-game airport test on Cities: Skylines 
 
 ## Compatibility
 
-Implemented against Cities: Skylines II **1.6.0f1**. Package metadata targets `1.6.*`, but other patches have not been tested. Uses Harmony 2.2.2 from the Cities2-MCP C# template.
+Package metadata targets Cities: Skylines II **`1.6.*`**. The mod was implemented and first playtested against **1.6.0f1**, and compatibility with **1.6.2f1** was checked on 2026-09-18. The three relevant game systems were unchanged from the original diagnosis, the post-patch runtime log confirmed successful guard activation with no mod warnings or errors, and all 20 descriptor regression tests passed against the updated Unity assemblies. The faulty vanilla code path remains present, so the fix is still needed on 1.6.2f1.
+
+This check did not include a fresh reproduction with the mod disabled or a new save/reload, uninstall or normal port-work playtest. Other game versions have not been verified; the declared version range is not a guarantee of compatibility with future patches. Uses Harmony 2.2.2 from the Cities2-MCP C# template.
 
 The mod checks the vanilla work query's component sets, access modes, options and filters before changing it. An unexpected query produces a warning and remains unchanged. Mods that replace the same query may conflict; if another replacement is observed later, this mod logs it and leaves that query alone.
 
